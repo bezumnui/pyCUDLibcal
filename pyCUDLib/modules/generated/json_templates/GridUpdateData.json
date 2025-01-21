@@ -1,0 +1,19 @@
+{
+  "itemId": 48417,
+  "dateStart": "2025-01-21 08:30:00",
+  "dateEnd": "2025-01-21 21:00:00",
+  "gridData": [
+    {
+      "start": "2025-01-21 15:30:00",
+      "className": "s-lc-eq-checkout"
+    },
+    {
+      "start": "2025-01-21 16:00:00",
+      "className": "s-lc-eq-checkout"
+    },
+    {
+      "start": "2025-01-21 20:30:00",
+      "className": "s-lc-eq-pending"
+    }
+  ]
+}

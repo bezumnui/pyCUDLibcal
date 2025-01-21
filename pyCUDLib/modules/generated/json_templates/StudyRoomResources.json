@@ -1,0 +1,15 @@
+{
+  "id": "eid_126907",
+    "title": "Study\u0020Room\u00204",
+    "url": "/space/126907",
+    "eid": 126907,
+    "gid": 12579,
+    "lid": 7109,
+    "grouping": "Group\u0020Study\u0020Rooms",
+    "gtype": 2,
+    "gBookingSelectableTime": false,
+    "capacity": 5,
+    "hasInfo": false,
+    "thumbnail": "",
+    "filterIds": []
+}

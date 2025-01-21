@@ -1,0 +1,18 @@
+{
+  "id": 1,
+  "eid": 48417,
+  "seat_id": 0,
+  "gid": 12579,
+  "lid": 7109,
+  "start": "2025-01-21 20:30:00",
+  "end": "2025-01-21 21:00:00",
+  "checksum": "29b584a3963085a58568e32f5d05ac31",
+  "options": [
+    "2025-01-21 21:00:00"
+  ],
+  "optionSelected": 0,
+  "optionChecksums": [
+    "fe2302e28f145ad75ba87bb9207b8e2b"
+  ],
+  "cost": 0
+}
