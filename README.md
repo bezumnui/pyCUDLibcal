@@ -44,6 +44,11 @@ To use the interactive mode, follow these steps:
    ```bash
    python examples/interactive_booking.py
    ```
+   or
+   ```bash
+   python interactive_booking.py
+   ```
+
 3. Once the script is running, choose your preferred mode (interactive or another option) when prompted.
 4. Follow the on-screen instructions to reserve a library room.
 
