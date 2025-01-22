@@ -37,12 +37,6 @@ This is how the reservation system looks like after the reservation spam:
 
 ## Usage
 
-Certainly! Here's the **Usage** block for your project:
-
----
-
-## Usage
-
 To use the interactive mode, follow these steps:
 
 1. Navigate to the `examples/[interactive_booking.py](examples/interactive_booking.py)` file in your project directory.
@@ -60,7 +54,9 @@ pip install -r pyCUDLib/requirements.txt
 
 ---
 
-Let me know if you need any more information!
+Let me know if you need any more information! 
+[Telegram](https:t.me/pythist42)
+
 
 ### Requirements
 
