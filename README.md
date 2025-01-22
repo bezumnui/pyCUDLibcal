@@ -39,7 +39,7 @@ This is how the reservation system looks like after the reservation spam:
 
 To use the interactive mode, follow these steps:
 
-1. Navigate to the `examples/[interactive_booking.py](examples/interactive_booking.py)` file in your project directory.
+1. Navigate to the [examples/interactive_booking.py](examples/interactive_booking.py) file in your project directory.
 2. Run the script by executing:
    ```bash
    python examples/interactive_booking.py
