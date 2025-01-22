@@ -55,7 +55,7 @@ pip install -r pyCUDLib/requirements.txt
 ---
 
 Let me know if you need any more information! 
-[Telegram](https:t.me/pythist42)
+[Telegram](https:://t.me/pythist42)
 
 
 ### Requirements
