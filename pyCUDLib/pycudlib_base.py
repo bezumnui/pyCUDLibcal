@@ -1,6 +1,8 @@
 import aiohttp
 from datetime import datetime, timedelta
 
+from pyCUDLib.errors.status_code_exception import StatusCodeException
+
 
 class PyCUDLibBase:
     BASE_URL = "https://cud.libcal.com"
@@ -20,7 +22,7 @@ class PyCUDLibBase:
     @staticmethod
     async def basic_verification(response: aiohttp.ClientResponse):
         if not (200 <= response.status <= 300):
-            raise Exception(f"Request failed with status code {response.status}"
+            raise StatusCodeException(f"Request failed with status code {response.status}"
                             f" and message {await response.text()}")
 
     async def post(self, url, data,  *args, **kwargs):

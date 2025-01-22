@@ -12,18 +12,55 @@ So far, the functionality provided is basic, allowing users to interact with the
 
 This project works by sniffing the internal API of the CUD HUB reservation system to provide automated interaction with the library's room reservation platform.
 
+This is how the reservation system looks like before the reservation spam:
+![Before reservation](img/reserve_before.png)
+Logs form the reservation spam:
+```text
+[...]
+Cancel link: https://cud.libcal.com/equipment/cancel?id=cs_jwMn8AsK
+2025-01-23 17:30:00 - 2025-01-23 18:00:00 booked on email 65eeag29t0@students.cud.ac.ae
+Cancel link: https://cud.libcal.com/equipment/cancel?id=cs_lo7VmwHj
+2025-01-23 18:00:00 - 2025-01-23 18:30:00 booked on email 4b3g76ayz0@students.cud.ac.ae
+Cancel link: https://cud.libcal.com/equipment/cancel?id=cs_jwMnJJsK
+2025-01-23 18:30:00 - 2025-01-23 19:00:00 booked on email i9xnri4hz2@students.cud.ac.ae
+[...]
+```
+
+This is how the reservation system looks like after the reservation spam:
+![reserve_after.png](img/reserve_after.png)
+
 ## Features
 
 - Interactive room reservation through CUD HUB Campus library system.
 - Based on internal API sniffing, allowing for efficient interaction with the backend.
-- Simple and clean Python code (everything you need is in the `main.py` file).
+- Simple and clean Python code (everything you need is in the [interactive_booking.py](examples/interactive_booking.py) file).
 
 ## Usage
 
-1. Clone the repository to your local machine.
-2. Open the `main.py` file.
-3. Customize the code (if needed) based on your requirements.
-4. Run the script to interact with the reservation system.
+Certainly! Here's the **Usage** block for your project:
+
+---
+
+## Usage
+
+To use the interactive mode, follow these steps:
+
+1. Navigate to the `examples/[interactive_booking.py](examples/interactive_booking.py)` file in your project directory.
+2. Run the script by executing:
+   ```bash
+   python examples/interactive_booking.py
+   ```
+3. Once the script is running, choose your preferred mode (interactive or another option) when prompted.
+4. Follow the on-screen instructions to reserve a library room.
+
+Make sure you have all required dependencies installed before running the script. If needed, you can install them by running:
+```bash
+pip install -r pyCUDLib/requirements.txt
+```
+
+---
+
+Let me know if you need any more information!
 
 ### Requirements
 

@@ -2,6 +2,7 @@ import json
 
 import aiohttp
 
+from pyCUDLib.modules.generated.booking_complete import BookingComplete
 from pyCUDLib.modules.generated.ajax_booking import AjaxBooking
 from pyCUDLib.modules.booking_responce import BookingResponse
 from pyCUDLib.pycudlib_base import PyCUDLibBase
@@ -58,7 +59,7 @@ class SpaceBooking(PyCUDLibBase):
         self.set_referrer(f"https://cud.libcal.com/space/{booking[0].eid}")
         # self._session.headers["Content-Type"] = "multipart/form-data"
         r = await self.post("ajax/space/book", form_data)
-        return r
+        return BookingComplete(**await r.json())
 
     def serialize_ajax_booking(self, booking: AjaxBooking):
         data = {
