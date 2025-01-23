@@ -37,19 +37,18 @@ This is how the reservation system looks like after the reservation spam:
 
 ## Usage
 
-Certainly! Here's the **Usage** block for your project:
-
----
-
-## Usage
-
 To use the interactive mode, follow these steps:
 
-1. Navigate to the `examples/[interactive_booking.py](examples/interactive_booking.py)` file in your project directory.
+1. Navigate to the [examples/interactive_booking.py](examples/interactive_booking.py) file in your project directory.
 2. Run the script by executing:
    ```bash
    python examples/interactive_booking.py
    ```
+   or
+   ```bash
+   python interactive_booking.py
+   ```
+
 3. Once the script is running, choose your preferred mode (interactive or another option) when prompted.
 4. Follow the on-screen instructions to reserve a library room.
 
@@ -60,7 +59,9 @@ pip install -r pyCUDLib/requirements.txt
 
 ---
 
-Let me know if you need any more information!
+Let me know if you need any more information! 
+[Telegram](https://t.me/pythonist42)
+
 
 ### Requirements
 
