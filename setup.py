@@ -7,7 +7,6 @@ setup(
     author='Bezumnui',
     author_email='bezumnui.mistikgt@gmail.com',
     url='https://github.com/bezumnui/pyCUDLibcal',
-    packages=find_packages(where="pyCUDLib"),
-    package_dir={'': 'pyCUDLib'},
+    packages=find_packages(),
 
 )
