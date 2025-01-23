@@ -83,7 +83,7 @@ class InteractiveBooking:
         if mode == 0:
             await self.reserve_every_timing()
 
-        elif mode == 0:
+        elif mode == 1:
             self.ask_user_chose_slot()
             r = await self.reserve()
             print("Success!\nCancellation link:", r.get_cancellation_link())
