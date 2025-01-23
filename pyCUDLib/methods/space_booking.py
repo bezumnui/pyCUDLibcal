@@ -2,6 +2,7 @@ import json
 
 import aiohttp
 
+from pyCUDLib.errors.status_code_exception import BookingCancellationException
 from pyCUDLib.modules.generated.booking_complete import BookingComplete
 from pyCUDLib.modules.generated.ajax_booking import AjaxBooking
 from pyCUDLib.modules.booking_responce import BookingResponse
@@ -60,6 +61,16 @@ class SpaceBooking(PyCUDLibBase):
         # self._session.headers["Content-Type"] = "multipart/form-data"
         r = await self.post("ajax/space/book", form_data)
         return BookingComplete(**await r.json())
+
+    async def cancel_booking(self, booking_id: str):
+        self.set_referrer(f"https://cud.libcal.com/equipment/cancel?id={booking_id}")
+        r = await self.post(f"ajax/equipment/cancel/{booking_id}")
+        data = json.loads(await r.text())
+        if data.get("success"):
+            return True
+        else:
+            raise BookingCancellationException(data.get("error"))
+
 
     def serialize_ajax_booking(self, booking: AjaxBooking):
         data = {

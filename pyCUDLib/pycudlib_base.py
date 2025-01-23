@@ -25,7 +25,7 @@ class PyCUDLibBase:
             raise StatusCodeException(f"Request failed with status code {response.status}"
                             f" and message {await response.text()}")
 
-    async def post(self, url, data,  *args, **kwargs):
+    async def post(self, url, data=None,  *args, **kwargs):
         r = await self._session.request('POST', url, *args, data=data, **kwargs)
         await self.basic_verification(r)
         return r
