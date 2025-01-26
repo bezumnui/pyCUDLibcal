@@ -13,8 +13,8 @@ class PyCUDLibBase:
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Safari/605.1.15",
     }
 
-    def __init__(self):
-        self._session = aiohttp.ClientSession(PyCUDLibBase.BASE_URL, headers=PyCUDLibBase.BASE_HEADERS)
+    def __init__(self, proxy=None):
+        self._session = aiohttp.ClientSession(PyCUDLibBase.BASE_URL, headers=PyCUDLibBase.BASE_HEADERS, proxy=proxy)
 
     async def close(self):
         await self._session.close()
