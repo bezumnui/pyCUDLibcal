@@ -1,6 +1,6 @@
 [project]
 name = "pyCUDLib"
-version = "0.1a"
+version = "0.2a"
 authors = [
   { name="Bezumnui", email="bezumnui.mistikgt@gmail.com" },
 ]
