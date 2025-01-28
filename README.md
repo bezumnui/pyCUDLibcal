@@ -2,7 +2,7 @@
 
 Welcome to the Interactive Library Room Reservation project for CUD HUB Campus!
 
-This project allows you to reserve library rooms interactively based on the internal API of CUD HUB's reservation system.
+This project allows you to reserve library rooms interactively based on the internal API of Canadian University of Dubai HUB's reservation system.
 
 ## Overview
 
